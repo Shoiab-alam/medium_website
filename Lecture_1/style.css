@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.containers {
+    background:rgb(253, 191, 75);
+}
+
+.navbar {
+    width:100%;
+    position: fixed;
+    top:0;
+    background:rgb(253, 191, 75);
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+nav {
+    width:80%;
+    margin:auto;
+    display: flex;
+    padding:10px;
+    justify-content: space-between;
+}
+.link {
+    display: block;
+}
+
+.logo img {
+    width: 170px;
+    margin-top:10px;
+}
+
+
+.link ul a {
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 500;
+    font-size:15px;
+}
+.link ul a button {
+    background: #2d2c2c;
+    color:white;
+    border: none;
+    cursor: pointer;
+    padding:10px 5px;
+    width: 120px;
+    border-radius: 20px;
+    transition: 0.5s ease;;
+}
+
+.link ul a button:hover {
+    background: #000;
+}
+
+.cont {
+    cursor: pointer;
+    display: none;
+
+
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+/* Navbar ended*/
+
+/*stay-curious Start*/
+.stay-curious {
+    width: 80%;
+    margin:auto;
+    padding-top: 150px;
+    padding-bottom: 80px
+}
+.stay-curious h2 {
+    font-size: 7vw;
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom:20px;
+}
+
+.stay-curious p {
+    font-size: 2vw;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom:20px;
+}
+.stay-curious button {
+    background: #2d2c2c;
+    color:white;
+    border: none;
+    padding: 10px;
+    width:200px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+.stay-curious button:hover{
+    background: #000;
+}
+
+/*Stay Curious End*/
+
+/*Trending Start*/
+
+.trending {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:100px;
+    gap: 40px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.trending-second {
+    width:30%;
+    display: flex;
+}
+.trending-medium{
+    position: absolute;
+    left:0;top:-45px;
+    font-weight: bold;
+}
+
+.count {
+    font-size: 30px;padding:10px;
+    opacity: 0.1;
+}
+
+.tds-box {
+    display:flex;margin-bottom:10px;
+}
+.tds-box .about-author {
+    display: flex;
+    padding-left: 5px;
+    font-weight: 600;
+    font-size:11px;
+}
+
+.container h5 {
+    font-size: 15px;
+    padding:13px 0px;;
+}
+.container p {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.author {
+    position: relative;
+    cursor: pointer;
+}
+.author-title{
+    position: absolute;
+    top:-60px;
+    right: -230px;
+    display: inline-block;
+    width: 280px;
+    min-height: 100px;
+    border: 1px solid black;
+    background: white;
+    z-index: 1;
+    border: none;
+    box-shadow: 2px 3px 5px 5px #ece7e7;
+    display: none;
+    padding:8px;
+    
+}
+.author:hover .author-title {
+    display: block;
+    
+}
+
+.author-follow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.adam { 
+    display: flex;
+}
+.author-follow .follow {
+    background: green;
+    color:white;
+    padding:5px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.para {
+    line-height: 15px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    opacity : 0.5;
+}
+
+/*Trending End*/
+
+/*Discover Start*/
+/* Discover Start */
+.discover {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    gap: 20px;
+    display: flex;
+    position: relative;
+    min-height: 200px; /* Set a specific height for the parent container */
+}
+
+.discover-one {
+    width: 60%;
+}
+
+
+
+
+.discover-two {
+    width: 35%;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    opacity: 0.8;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .sticky span {
+    background:rgb(238, 230, 230);
+    padding:5px;
+    margin:5px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .green {
+    color:rgb(9, 110, 9);margin-top:100px;margin-bottom:20px;font-weight:normal;
+  }
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+}
+
+.cards h2 {
+    font-size:18px;
+    padding: 10px 0px;
+    
+}
+.dd p {
+    padding: 4px 0px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+.ida {
+    font-size: 12px;
+    padding-left: 11px;
+    font-weight: 600;
+    line-height: 22px;;
+
+}
+/* Discover End */
+
+
+/* Sign in CSS Start*/
+
+.sign-in {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.sign-in-second {
+    background:white; /* White color with opacity 1 */
+    margin: auto;
+    width: 50%;
+    height: 100vh;
+    box-shadow: 2px 4px 4px 6px #f1f1f1;
+    opacity: 1;
+    position: relative;
+    padding: 40px 50px;
+}
+.sign-in-second .cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size:30px;
+}
+
+.sign-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome {
+    font-size: 30px;
+    font-family: serif;
+    margin-bottom: 80px;
+}
+
+.sign-form button {
+    background: none;
+    margin-bottom: 12px;
+    width: 300px;
+    border: 0.1px solid black;
+    padding: 10px 8px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.sign-form button img {
+    height: 20px;
+    width: 70px;
+}
+
+.btn-img {
+    padding-right: 50px;
+}
+
+.new-account {
+    color: #242424;
+    font-weight: 500;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.forget {
+    margin-top: 60px;
+}
+.forget p {
+    color: #6B6B6B;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+@media only screen and (max-width:1200px){
+    .trending {
+        gap: 0px;
+
+    }
+    .trending-second{
+        display: flex;
+        width: 40%;
+        margin-bottom: 20px;
+        border-bottom: 0.1px solid black;
+        padding-bottom: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width:850px){
+    nav {
+        width: 100%;
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+    .link {
+        margin-top: 0;
+        display: none;
+    }
+    .cont {
+        display: block;
+        position: absolute;
+        top: 10;
+        right: 20px;
+    }
+
+    nav ul a {
+        width: 100%; /* Make the links full width on small screens */
+        display: block;
+        text-align: center;
+    }
+
+    .sign-in-second {
+        width: 100%;
+    }
+
+
+
+    .trending-second{
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 0.1px solid black;
+        padding-bottom: 10px;
+    }
+
+    .discover {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .discover-one,
+    .discover-two {
+        width: 100%; /* Make both elements full width on small screens */
+    }
+
+    .discover-two {
+        order: -1; /* Move discover-two before discover-one in the stacking order */
+    }
+
+    
+}
+
+
+
+
